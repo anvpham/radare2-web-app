@@ -1,0 +1,8 @@
+.codeViewer {
+    border: 2px solid;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: scroll;
+
+}

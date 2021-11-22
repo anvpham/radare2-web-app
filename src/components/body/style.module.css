@@ -1,0 +1,28 @@
+.body {
+    display: flex;
+}
+
+.assemblyCode, .pseudoCode {
+    margin-right: 1rem;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.infoViewer {
+    flex: 2;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.codeViewer {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+
+.viewer {
+    flex: 1;
+    overflow: scroll;
+}

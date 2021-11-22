@@ -1,0 +1,32 @@
+.row {
+    display: flex;
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+}
+
+.referencedBy {
+    background-color: black;
+    color: white;
+    flex: 1;
+    text-align: center;
+}
+
+.stringValue {
+    flex: 1;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.stringsViewer {
+    border: 2px solid;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}

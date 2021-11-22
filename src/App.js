@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Header, Body } from './components'
+import style from './style.module.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { appContext, initialContext } from './context';
+import React, { useState } from 'react';
 
 function App() {
+
+  const [appState, setAppState] = useState(initialContext)
+  const value = { appState, setAppState }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <appContext.Provider value={value}>
+      <div className={style.app}>
+        <Header className={style.header}></Header>
+        <Body></Body>
+      </div>
+    </appContext.Provider>
+    
   );
 }
 
